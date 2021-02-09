@@ -19,11 +19,9 @@ func min(a int, b int) int {
 }
 
 func maxProfit(prices []int) int {
-	var maxProfit int
-	minPrice := math.MaxInt32
+	maxProfit, minPrice := 0, math.MaxInt32
 	for _, v := range prices {
-		curProfit := max(v-minPrice, 0)
-		maxProfit = max(maxProfit, curProfit)
+		maxProfit = max(maxProfit, v-minPrice)
 		minPrice = min(minPrice, v)
 	}
 	return maxProfit
