@@ -1,8 +1,6 @@
 // https://leetcode.com/problems/two-sum/
 package main
 
-import "fmt"
-
 // O(n2)
 // func twoSum(nums []int, target int) []int {
 // 	for i := 0; i < len(nums); i++ {
@@ -28,6 +26,6 @@ func twoSum(nums []int, target int) []int {
 	return []int{}
 }
 
-func main() {
-	fmt.Println(twoSum([]int{1, 2, 3, 4, 5}, 5))
-}
+// func main() {
+// 	fmt.Println(twoSum([]int{1, 2, 3, 4, 5}, 5))
+// }
